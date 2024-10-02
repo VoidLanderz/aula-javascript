@@ -1,9 +1,63 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0" version="24.7.17">
-  <diagram name="Página-1" id="XmwkZ3FUI67SWWDkK0d-">
+  <diagram name="Página-1" id="E1EW0vxKmC-8pE9p5m_a">
     <mxGraphModel>
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="2" value="start" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="76" y="8" width="49" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Input número" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="28" y="107" width="146" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Número é positivo?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="8" y="303" width="185" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="N ímpar" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="77" y="787" width="72" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Número é par?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="83" y="561" width="153" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=0;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" value="N" style="curved=1;startArrow=none;endArrow=block;exitX=0.27;exitY=1;entryX=0.01;entryY=0;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="41" y="525" />
+              <mxPoint x="41" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" value="S" style="curved=1;startArrow=none;endArrow=block;exitX=0.73;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" value="S" style="curved=1;startArrow=none;endArrow=block;exitX=0.3;exitY=1;entryX=0.51;entryY=0;" edge="1" parent="1" source="6" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="114" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="N" style="curved=1;startArrow=none;endArrow=block;exitX=0.57;exitY=1;entryX=0.94;entryY=0;" edge="1" parent="1" source="6" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="176" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
