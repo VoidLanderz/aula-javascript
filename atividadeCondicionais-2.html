@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais 2</title>
+</head>
+<body>
+    <h1>Teste 2</h1>
+
+    <script>
+        let estaChovendo = prompt("Está chovendo? (sim/Não)").toLowerCase() === "sim";
+        let estaSol = prompt("Está Sol? (sim/Não)").toLowerCase() === "sim";
+        let estaFrio = prompt("Está frio? (sim/Não)").toLowerCase() === "sim";
+        if (estaChovendo) {
+            console.log ("Você não se molhou");
+
+            alert("esta chovendo, use um guarda-chuva e use roupas impermiaveis");
+            }else if (estaSol){
+                alert("esta com sol, vamo pra praia :P")
+            }else if (estaFrio){
+                alert("esta frio vista roupas de calor")
+            }else if (estaChovendo){
+                alert("o tempo esta agradavel, fica na paz")
+            } else {
+                alert("faz o L")
+            }
+    </script>
+</body>
+</html>

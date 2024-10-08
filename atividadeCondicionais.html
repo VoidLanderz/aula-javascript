@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+</head>
+<body>
+    <h1>Teste</h1>
+
+    <script>
+        let estaChovendo = prompt("Está chovendo? (sim/Não)").toLowerCase() === "sim";
+        let temGuardachuva = prompt("Você tem guardachuva? (sim/Não)").toLowerCase() === "sim";
+
+        if (estaChovendo && temGuardachuva) {
+            console.log ("Você não se molhou");
+
+            alert("Você está seguro da chuva");
+            } else {
+
+                if (estaChovendo){
+                console.log ("Ta chovendo");
+                
+                alert("Está chovendo e você não tem um guarda chuva. Melhor ficar em casa");
+                } else {
+                    console.log ("Não tem com o que se preocupar");
+
+                    alert( "não está chovendo e você tem um guarda chuva. Se ta de boa!") ;
+                }
+            }
+        
+    </script>
+</body>
+</html>
