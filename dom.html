@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 1</title>
+    <style>
+        p {
+            cursor: pointer;
+        }
+
+        .btn {
+            margin-left: 15px;
+            border-radius: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: none;
+            background-color: #b311db;
+            color: FFF;
+            font-size: 14px;
+        }
+
+        .btn:houver {
+            color: #FFF;
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="titulo">Hello world</h1>
+
+    <button onClick="acaoBotao()">Clicar</button>
+    <button onClick="inserirElemento()">inserir Elemento</button>
+
+    <br><br>
+    <span>Remover ultimos 5 itens</span>
+    <button onClick ="removerItens()">remover</button>
+    <script>
+
+        let cont = 0;
+
+        function acaoBotao() {
+            cont += 1;
+            document.getElementById("titulo").innerHTML = `Número do clique ${cont}`;
+        }
+
+        function inserirElemento() {
+            cont += 1;
+            const novoParagrafo = document.createElement("p");
+            novoParagrafo.textContent = `Número do clique ${cont}`;
+            novoParagrafo.id = cont;
+
+            const botaoRemover = document.createElement("button")
+            botaoRemover.textContent = "remover";
+            botaoRemover.className = "btn";
+            botaoRemover.onclick = () => {
+                novoParagrafo.remove();
+            }
+
+            novoParagrafo.appendChild(botaoRemover)
+
+            document.body.appendChild(novoParagrafo);
+        }
+
+        function removerItens() {
+            contAux = 1;
+            while(contAux <= 5) {
+
+                const elemento = document.getElementById(cont);
+                elemento.parentNode.removeChild(elemento);
+
+                cont--;
+                contAux++;
+            }
+        }
+    </script>
+</body>
+</html>
